@@ -1,0 +1,8 @@
+pandas
+numpy
+catboost
+shap
+networkx
+fastapi
+uvicorn
+streamlit
