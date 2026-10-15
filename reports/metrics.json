@@ -1,0 +1,287 @@
+{
+  "rows": {
+    "fit": 118824,
+    "val": 32033,
+    "test": 76079
+  },
+  "stages": {
+    "pre": {
+      "auc": 0.9996,
+      "thresholds": {
+        "label": 2.86,
+        "review": 12.16,
+        "block": 90.0
+      },
+      "level>=1": {
+        "recall": 0.9904,
+        "fpr": 0.00598
+      },
+      "level>=2": {
+        "recall": 0.9733,
+        "fpr": 0.00101
+      },
+      "level3": {
+        "recall": 0.1231,
+        "fpr": 0.0
+      },
+      "by_scenario": {
+        "ambulance": {
+          "calls": 130,
+          "level>=1": 0.0,
+          "level>=2": 0.0,
+          "level3": 0
+        },
+        "bad_signal": {
+          "calls": 1316,
+          "level>=1": 0.0061,
+          "level>=2": 0.0,
+          "level3": 0
+        },
+        "call_center": {
+          "calls": 12268,
+          "level>=1": 0.0,
+          "level>=2": 0.0,
+          "level3": 0
+        },
+        "emergency_request": {
+          "calls": 31,
+          "level>=1": 0.0,
+          "level>=2": 0.0,
+          "level3": 0
+        },
+        "foreign_legit": {
+          "calls": 533,
+          "level>=1": 0.0094,
+          "level>=2": 0.0038,
+          "level3": 0
+        },
+        "intl_spoof": {
+          "calls": 4037,
+          "level>=1": 1.0,
+          "level>=2": 0.9973,
+          "level3": 3990
+        },
+        "night_shift": {
+          "calls": 1484,
+          "level>=1": 0.0088,
+          "level>=2": 0.0013,
+          "level3": 0
+        },
+        "normal": {
+          "calls": 20456,
+          "level>=1": 0.0101,
+          "level>=2": 0.0017,
+          "level3": 0
+        },
+        "sales": {
+          "calls": 6385,
+          "level>=1": 0.0038,
+          "level>=2": 0.0006,
+          "level3": 0
+        },
+        "simbank": {
+          "calls": 24833,
+          "level>=1": 0.999,
+          "level>=2": 0.9954,
+          "level3": 0
+        },
+        "simbank_slow": {
+          "calls": 3546,
+          "level>=1": 0.9193,
+          "level>=2": 0.7913,
+          "level3": 0
+        },
+        "vacation": {
+          "calls": 1060,
+          "level>=1": 0.0047,
+          "level>=2": 0.0009,
+          "level3": 0
+        }
+      },
+      "top_features": {
+        "number_age_days": 12.51,
+        "in_out_ratio_24h": 12.07,
+        "unanswered_ratio": 10.94,
+        "source_operator": 8.63,
+        "unique_b_ratio_24h": 7.3,
+        "calls_24h": 6.7,
+        "fan_group_size_24h": 5.74,
+        "reciprocity": 5.63,
+        "connection_type": 4.13,
+        "pair_calls_before": 4.03,
+        "gateway_tac": 3.81,
+        "imsi_per_imei_24h": 3.63
+      }
+    },
+    "post": {
+      "auc": 0.9996,
+      "thresholds": {
+        "label": 2.9,
+        "review": 12.12,
+        "block": 90.0
+      },
+      "level>=1": {
+        "recall": 0.9909,
+        "fpr": 0.00573
+      },
+      "level>=2": {
+        "recall": 0.9757,
+        "fpr": 0.00092
+      },
+      "level3": {
+        "recall": 0.0,
+        "fpr": 0.0
+      },
+      "by_scenario": {
+        "ambulance": {
+          "calls": 130,
+          "level>=1": 0.0,
+          "level>=2": 0.0,
+          "level3": 0
+        },
+        "bad_signal": {
+          "calls": 1316,
+          "level>=1": 0.0061,
+          "level>=2": 0.0,
+          "level3": 0
+        },
+        "call_center": {
+          "calls": 12268,
+          "level>=1": 0.0,
+          "level>=2": 0.0,
+          "level3": 0
+        },
+        "emergency_request": {
+          "calls": 31,
+          "level>=1": 0.0,
+          "level>=2": 0.0,
+          "level3": 0
+        },
+        "foreign_legit": {
+          "calls": 533,
+          "level>=1": 0.0113,
+          "level>=2": 0.0019,
+          "level3": 0
+        },
+        "intl_spoof": {
+          "calls": 4037,
+          "level>=1": 1.0,
+          "level>=2": 0.9973,
+          "level3": 0
+        },
+        "night_shift": {
+          "calls": 1484,
+          "level>=1": 0.0108,
+          "level>=2": 0.002,
+          "level3": 0
+        },
+        "normal": {
+          "calls": 20456,
+          "level>=1": 0.0097,
+          "level>=2": 0.0016,
+          "level3": 0
+        },
+        "sales": {
+          "calls": 6385,
+          "level>=1": 0.0027,
+          "level>=2": 0.0005,
+          "level3": 0
+        },
+        "simbank": {
+          "calls": 24833,
+          "level>=1": 0.9988,
+          "level>=2": 0.9954,
+          "level3": 0
+        },
+        "simbank_slow": {
+          "calls": 3546,
+          "level>=1": 0.9253,
+          "level>=2": 0.813,
+          "level3": 0
+        },
+        "vacation": {
+          "calls": 1060,
+          "level>=1": 0.0038,
+          "level>=2": 0.0009,
+          "level3": 0
+        }
+      },
+      "top_features": {
+        "number_age_days": 13.03,
+        "in_out_ratio_24h": 11.9,
+        "unanswered_ratio": 10.37,
+        "source_operator": 8.93,
+        "unique_b_ratio_24h": 7.75,
+        "calls_24h": 7.07,
+        "reciprocity": 5.2,
+        "gateway_tac": 4.93,
+        "fan_group_size_24h": 4.22,
+        "pair_calls_before": 3.96,
+        "short_ratio": 3.37,
+        "b_called_a_before": 2.82
+      }
+    }
+  },
+  "rules_baseline": {
+    "any_flag": {
+      "recall": 0.9944,
+      "fpr": 0.51087
+    },
+    "two_flags": {
+      "recall": 0.5039,
+      "fpr": 0.15771
+    },
+    "per_rule": {
+      "foreign_gateway": {
+        "recall": 0.1245,
+        "fpr": 0.00447
+      },
+      "short_calls": {
+        "recall": 0.0,
+        "fpr": 0.0
+      },
+      "burst": {
+        "recall": 0.0,
+        "fpr": 0.0
+      },
+      "unique_contacts": {
+        "recall": 0.9093,
+        "fpr": 0.48698
+      },
+      "regions": {
+        "recall": 0.0034,
+        "fpr": 0.13991
+      },
+      "imsi_change": {
+        "recall": 0.4249,
+        "fpr": 0.0
+      },
+      "night": {
+        "recall": 0.0601,
+        "fpr": 0.04647
+      },
+      "in_out": {
+        "recall": 0.0135,
+        "fpr": 0.0
+      },
+      "emergency_spoof": {
+        "recall": 0.009,
+        "fpr": 0.0
+      }
+    },
+    "any_flag_by_scenario": {
+      "ambulance": 0.5923,
+      "bad_signal": 0.2287,
+      "call_center": 0.9974,
+      "emergency_request": 0.4839,
+      "foreign_legit": 0.4165,
+      "intl_spoof": 1.0,
+      "night_shift": 0.3639,
+      "normal": 0.3598,
+      "sales": 0.1635,
+      "simbank": 0.9948,
+      "simbank_slow": 0.9848,
+      "vacation": 0.4811
+    }
+  }
+}
