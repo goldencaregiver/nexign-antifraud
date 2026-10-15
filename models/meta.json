@@ -1,0 +1,79 @@
+{
+  "thresholds": {
+    "pre": {
+      "label": 2.86,
+      "review": 12.16,
+      "block": 90.0
+    },
+    "post": {
+      "label": 2.9,
+      "review": 12.12,
+      "block": 90.0
+    }
+  },
+  "features": {
+    "pre": [
+      "cli_trunk_mismatch",
+      "short_cli_from_foreign",
+      "a_is_landline",
+      "connection_type",
+      "source_operator",
+      "hour_local_b",
+      "pair_calls_before",
+      "b_called_a_before",
+      "number_age_days",
+      "calls_1m",
+      "calls_1h",
+      "calls_24h",
+      "short_ratio",
+      "unanswered_ratio",
+      "ring_drop_ratio",
+      "unique_b_ratio_24h",
+      "regions_count_1h",
+      "regions_entropy_1h",
+      "reciprocity",
+      "in_out_ratio_24h",
+      "imsi_per_imei_24h",
+      "gateway_tac",
+      "fan_group_size_24h",
+      "fan_b_overlap",
+      "trunk_distinct_a_1h"
+    ],
+    "post": [
+      "cli_trunk_mismatch",
+      "short_cli_from_foreign",
+      "a_is_landline",
+      "connection_type",
+      "source_operator",
+      "hour_local_b",
+      "pair_calls_before",
+      "b_called_a_before",
+      "number_age_days",
+      "calls_1m",
+      "calls_1h",
+      "calls_24h",
+      "short_ratio",
+      "unanswered_ratio",
+      "ring_drop_ratio",
+      "unique_b_ratio_24h",
+      "regions_count_1h",
+      "regions_entropy_1h",
+      "reciprocity",
+      "in_out_ratio_24h",
+      "imsi_per_imei_24h",
+      "gateway_tac",
+      "fan_group_size_24h",
+      "fan_b_overlap",
+      "trunk_distinct_a_1h",
+      "answered",
+      "duration_sec",
+      "short_call",
+      "ring_drop"
+    ]
+  },
+  "fpr_targets": {
+    "label": 0.01,
+    "review": 0.001,
+    "block": 0.0002
+  }
+}
